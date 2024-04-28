@@ -55,6 +55,7 @@ public class V2 {
     private final ProcessNode processNode; // process.node
     private final ProcessStatus processStatus; // process.status
     private final WorkforcePlanDetail workforcePlanDetail; // workforce_plan_detail
+    private final WorkforcePlan workforcePlan; // 编制规划方案
 
     public V2(Config config) {
         this.basicInfoBank = new BasicInfoBank(config);
@@ -94,6 +95,7 @@ public class V2 {
         this.processNode = new ProcessNode(config);
         this.processStatus = new ProcessStatus(config);
         this.workforcePlanDetail = new WorkforcePlanDetail(config);
+        this.workforcePlan = new WorkforcePlan(config);
     }
 
     public BasicInfoBank basicInfoBank() {
@@ -243,4 +245,9 @@ public class V2 {
     public WorkforcePlanDetail workforcePlanDetail() {
         return workforcePlanDetail;
     }
+
+    public WorkforcePlan workforcePlan() {
+        return workforcePlan;
+    }
+
 }

@@ -15,6 +15,7 @@ package com.lark.oapi.core.utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.LongSerializationPolicy;
+import com.google.gson.internal.bind.TypeAdapters;
 
 public class Jsons {
 
@@ -30,6 +31,7 @@ public class Jsons {
             gsonBuilder.setPrettyPrinting();
         }
         gsonBuilder.disableHtmlEscaping();
+	    gsonBuilder.registerTypeAdapter(Long.class, TypeAdapters.LONG);
         return gsonBuilder.create();
     }
 }
