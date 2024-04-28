@@ -20,13 +20,13 @@ public class BpmDataengineI18n {
      * i18n类型字段，中文值
      * <p> 示例值：北京
      */
-    @SerializedName("zh_cn")
+    @SerializedName("zh-CN")
     private String zhCn;
     /**
      * i18n类型字段，英文值
      * <p> 示例值：Beijing
      */
-    @SerializedName("en_us")
+    @SerializedName("en-US")
     private String enUs;
 
     // builder 开始

@@ -48,6 +48,8 @@ public class V2 {
     private final ProcessApprover processApprover; // process.approver
     private final ProcessCc processCc; // process.cc
     private final ProcessNode processNode; // process.node
+    private final WorkforcePlan workforcePlan; // 编制规划方案
+    private final WorkforcePlanDetail workforcePlanDetail; // 编制计划方案详情
 
     public V2(Config config) {
         this.basicInfoBank = new BasicInfoBank(config);
@@ -80,6 +82,8 @@ public class V2 {
         this.processApprover = new ProcessApprover(config);
         this.processCc = new ProcessCc(config);
         this.processNode = new ProcessNode(config);
+        this.workforcePlan = new WorkforcePlan(config);
+        this.workforcePlanDetail = new WorkforcePlanDetail(config);
     }
 
     public BasicInfoBank basicInfoBank() {
@@ -200,5 +204,13 @@ public class V2 {
 
     public ProcessNode processNode() {
         return processNode;
+    }
+
+    public WorkforcePlan workforcePlan() {
+        return workforcePlan;
+    }
+
+    public WorkforcePlanDetail workforcePlanDetail() {
+        return workforcePlanDetail;
     }
 }
