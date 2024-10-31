@@ -27,7 +27,7 @@ public class TalentInterviewRegistrationSimple {
      * <p> 示例值：1618494330932
      */
     @SerializedName("registration_time")
-    private Integer registrationTime;
+    private Long registrationTime;
     /**
      * 下载链接
      * <p> 示例值：https://hire.feishu.cn/hire/file/blob/...token.../
@@ -69,11 +69,11 @@ public class TalentInterviewRegistrationSimple {
         this.id = id;
     }
 
-    public Integer getRegistrationTime() {
+    public Long getRegistrationTime() {
         return this.registrationTime;
     }
 
-    public void setRegistrationTime(Integer registrationTime) {
+    public void setRegistrationTime(Long registrationTime) {
         this.registrationTime = registrationTime;
     }
 
@@ -95,7 +95,7 @@ public class TalentInterviewRegistrationSimple {
          * 创建时间
          * <p> 示例值：1618494330932
          */
-        private Integer registrationTime;
+        private Long registrationTime;
         /**
          * 下载链接
          * <p> 示例值：https://hire.feishu.cn/hire/file/blob/...token.../
@@ -122,7 +122,7 @@ public class TalentInterviewRegistrationSimple {
          * @param registrationTime
          * @return
          */
-        public Builder registrationTime(Integer registrationTime) {
+        public Builder registrationTime(Long registrationTime) {
             this.registrationTime = registrationTime;
             return this;
         }
